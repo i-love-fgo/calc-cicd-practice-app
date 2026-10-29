@@ -8,7 +8,7 @@ function subtract(a, b) {
 }
 
 function multiply(a, b) {
-  return a + b; // ← 本当は a * b。コピペして直し忘れた想定
+  return a * b;
 }
 
 function divide(a, b) {

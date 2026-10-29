@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide } = require('../src/calc');
+const { add, subtract, multiply, divide, power } = require('../src/calc');
 
 describe('calc', () => {
   test('add: 2 + 3 は 5 になる', () => {
@@ -15,6 +15,10 @@ describe('calc', () => {
 
   test('divide: 6 / 3 は 2 になる', () => {
     expect(divide(6, 3)).toBe(2);
+  });
+
+  test('power: 2の3乗は8になる', () => {
+    expect(power(2, 3)).toBe(8);
   });
 
   test('divide: 0で割るとエラーになる', () => {
